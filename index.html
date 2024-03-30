@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by zyuriasu</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1 class="header_text">A message for you!</h1>
+      <h1 class="header_text">Would you like to read it?</h1>
+    </div>
+    <div class="gif_container">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWZkd3N3aWd5a3d4emdiOXZzcjY1ZG85YzNqOHRkeXoxM2JhdGg2bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VbVfOFXcGidJPm2NaS/giphy.gif" alt="Cute animated illustration">
+    </div>
+    <div class="buttons">
+      <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+      <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+      <script>
+        function nextPage() {
+          window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+          var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+          var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+          document.getElementById('noButton').style.left = `${x}px`;
+          document.getElementById('noButton').style.top = `${y}px`;
+        }
+      </script>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
